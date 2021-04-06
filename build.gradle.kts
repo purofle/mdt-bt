@@ -4,7 +4,7 @@ plugins {
     id("net.mamoe.mirai-console") version "2.5-RC"
 }
 
-group = "org.example"
+group = "com.github.purofle"
 version = "1.0-SNAPSHOT"
 
 java.sourceCompatibility = JavaVersion.VERSION_15
