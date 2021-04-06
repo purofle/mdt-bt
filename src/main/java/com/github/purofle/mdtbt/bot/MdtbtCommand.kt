@@ -18,7 +18,6 @@ object MdtbtCommand : SimpleCommand(
     suspend fun CommandSender.handle(bt: String) {
         bot?.logger?.info("started ${bt}")
         if (bt.startsWith(ContentHandler.schemHeader)) {
-            ContentHandler(MainBot.configFolder)
             val schem = ContentHandler().parseSchematic(bt)
             val preview: BufferedImage = ContentHandler().previewSchematic(schem)
             val sname = schem.name().replace("/", "_").replace(" ", "_")
